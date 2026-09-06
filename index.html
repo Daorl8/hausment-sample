@@ -93,12 +93,6 @@ h1,h2,h3{font-family:var(--disp);font-weight:700;line-height:1.14;color:var(--gr
 .hero-media .f1{right:-6px;top:-18px;transform:rotate(8deg)}
 .hero-media .f2{left:-20px;bottom:20px;transform:rotate(-10deg)}
 
-/* marquee strip */
-.strip{background:var(--green);color:#fff;overflow:hidden;white-space:nowrap;padding:11px 0}
-.strip-in{display:inline-flex;gap:28px;align-items:center;font-family:var(--disp);font-weight:600;font-size:1.02rem;letter-spacing:.02em;animation:mq 22s linear infinite;will-change:transform}
-.strip-in span{display:inline-flex;align-items:center;gap:28px}
-.strip svg{width:17px;height:17px;opacity:.85}
-@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
 /* generic section */
 .sec{padding:clamp(56px,8vw,90px) 0}
@@ -243,13 +237,6 @@ a:focus-visible,button:focus-visible{outline:2.5px solid var(--leaf);outline-off
   </div>
 </section>
 
-<!-- STRIP -->
-<div class="strip" aria-hidden="true">
-  <div class="strip-in">
-    <span>FRESHLY ROASTED<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M6 13h9v4a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4z"/><path d="M15 14h3a3 3 0 0 1 0 6h-3"/></svg>HANDMADE COFFEE<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M3 10 L12 4 L21 10 V20 H3 Z"/></svg>WEEKLY ROASTING<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="4"/></svg>JEONJU MANSEONG<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M6 13h9v4a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4z"/><path d="M15 14h3a3 3 0 0 1 0 6h-3"/></svg></span>
-    <span>FRESHLY ROASTED<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M6 13h9v4a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4z"/><path d="M15 14h3a3 3 0 0 1 0 6h-3"/></svg>HANDMADE COFFEE<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M3 10 L12 4 L21 10 V20 H3 Z"/></svg>WEEKLY ROASTING<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="4"/></svg>JEONJU MANSEONG<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M6 13h9v4a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4z"/><path d="M15 14h3a3 3 0 0 1 0 6h-3"/></svg></span>
-  </div>
-</div>
 
 <!-- ABOUT / ROASTING -->
 <section class="sec" id="about">
