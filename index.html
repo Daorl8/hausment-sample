@@ -161,7 +161,7 @@ h1,h2,h3{font-family:var(--disp);font-weight:700;line-height:1.14;color:var(--gr
 .qbar .q1{background:var(--green);color:#fff}
 .qbar .q2{background:#fff;color:var(--green);border:2px solid var(--green)}
 
-/* reveal (desktop only) + reduced-motion fallback */
+/* reveal (desktop only) · 동작 줄이기여도 강제 재생 (다올 지정, 하우스 force 패턴) */
 @media(min-width:768px){
  html.js .rv{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
  html.js .rv.in{opacity:1;transform:none}
