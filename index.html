@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>Hausment Coffee Roasters — 전주 만성동 로스팅 룸 카페</title>
+<meta name="description" content="Hausment Coffee Roasters — 전주 만성동, 어린이 공원 안쪽의 작은 로스팅 룸. 매주 직접 볶는 원두와 손수 내린 커피, 디저트를 즐기는 동네 카페입니다.">
+<meta name="theme-color" content="#20493B">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hausment Coffee Roasters — 전주 로스팅 룸 카페">
+<meta property="og:description" content="전주 만성동, 어린이 공원 안쪽의 작은 로스팅 룸. 매주 직접 볶는 원두와 손수 내린 커피.">
+<meta property="og:image" content="https://hausment-sample.lgt3232.workers.dev/haus-storefront.webp">
+<meta property="og:url" content="https://hausment-sample.lgt3232.workers.dev/">
+<meta property="og:site_name" content="Hausment Coffee Roasters">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://hausment-sample.lgt3232.workers.dev/haus-storefront.webp">
+<link rel="canonical" href="https://hausment-sample.lgt3232.workers.dev/">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="haus-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@500;600;700&family=Gochi+Hand&family=Nunito:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Hausment Coffee Roasters","alternateName":"하우스먼트 로스팅 룸","description":"전주 만성동의 작은 로스팅 룸 카페. 매주 직접 로스팅한 원두와 손수 내린 커피, 디저트.","image":"https://hausment-sample.lgt3232.workers.dev/haus-storefront.webp","servesCuisine":["Coffee","Cafe","Dessert"],"priceRange":"₩₩","url":"https://hausment-sample.lgt3232.workers.dev/","address":{"@type":"PostalAddress","streetAddress":"만성북2길 15 1층 102호","addressLocality":"전주시 덕진구","addressRegion":"전라북도","addressCountry":"KR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"09:00","closes":"18:00"}]}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+ --bg:#FFFFFF; --soft:#EEF4EC; --soft2:#E3EEE3;
+ --green:#20493B; --green-d:#163A2E; --leaf:#3E7A55;
+ --ink:#23302A; --ink2:#5E6E63; --faint:#93A398;
+ --line:#CFE0D3;
+ --disp:'Shantell Sans','Pretendard Variable',system-ui,sans-serif;
+ --hand:'Gochi Hand','Pretendard Variable',system-ui,sans-serif;
+ --body:'Nunito','Pretendard Variable',system-ui,sans-serif;
+ --kr:'Nunito','Pretendard Variable',system-ui,sans-serif;
+ --bar:64px; --ease:cubic-bezier(.22,.61,.36,1);
+}
+html{color-scheme:light;-webkit-text-size-adjust:100%;scroll-behavior:auto;scroll-padding-top:78px;overflow-x:hidden;background:var(--bg)}
+body{font-family:var(--body);color:var(--ink);background:var(--bg);line-height:1.7;word-break:keep-all;overflow-wrap:break-word;overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:1140px;margin:0 auto;padding:0 24px;position:relative}
+section{position:relative}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.045;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+::selection{background:var(--green);color:#fff}
+h1,h2,h3{font-family:var(--disp);font-weight:700;line-height:1.14;color:var(--green)}
+.hand{font-family:var(--hand);color:var(--leaf)}
+.memo{font-family:var(--hand);color:var(--leaf);font-size:1.08rem;line-height:1.2;display:inline-block}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--hand);font-size:1.15rem;color:var(--leaf);letter-spacing:.01em}
+.doodle{color:var(--green);flex:none}
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:9px;font-family:var(--disp);font-weight:600;font-size:.98rem;padding:12px 24px;border-radius:999px;transition:transform .16s var(--ease),background .2s,color .2s,border-color .2s;cursor:pointer}
+.btn svg{width:18px;height:18px}
+.btn-fill{background:var(--green);color:#fff}
+.btn-fill:hover{transform:translateY(-2px);background:var(--green-d)}
+.btn-ol{background:#fff;color:var(--green);border:2px solid var(--green)}
+.btn-ol:hover{background:var(--soft);transform:translateY(-2px)}
+
+/* header */
+.hdr{position:fixed;top:0;left:0;right:0;z-index:60;transition:background .3s var(--ease),box-shadow .3s}
+.hdr-in{height:var(--bar);display:flex;align-items:center;justify-content:space-between;padding:0 24px;max-width:1240px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--disp);font-weight:700;font-size:1.24rem;color:var(--green)}
+.brand img{height:34px;width:auto}
+.nav-lnk{display:flex;gap:24px;align-items:center}
+.nav-lnk a{font-family:var(--disp);font-weight:500;font-size:.95rem;color:var(--green);opacity:.82;transition:.2s}
+.nav-lnk a:hover{opacity:1}
+.hdr.scrolled{background:rgba(255,255,255,.94);box-shadow:0 1px 0 var(--line)}
+.burger{display:none;flex-direction:column;gap:5px;width:32px;height:32px;justify-content:center;align-items:center;background:none;border:0;cursor:pointer}
+.burger span{display:block;width:23px;height:2.5px;border-radius:2px;background:var(--green);transition:.3s}
+.drawer{position:fixed;inset:0;z-index:70;background:var(--green);color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;opacity:0;visibility:hidden;transition:opacity .3s var(--ease),visibility .3s}
+.drawer.open{opacity:1;visibility:visible}
+.drawer a{font-family:var(--disp);font-weight:600;font-size:2rem;color:#fff;padding:8px}
+.drawer .dx{position:absolute;top:18px;right:22px;font-size:2.1rem;background:none;border:0;color:#fff;cursor:pointer;line-height:1}
+
+/* hero */
+.hero{padding:calc(var(--bar) + 34px) 0 46px}
+.hero-in{display:grid;grid-template-columns:1fr;gap:34px;align-items:center}
+.hero-txt .eyebrow{margin-bottom:16px}
+.hero h1{font-size:clamp(2.7rem,7vw,4.6rem);font-weight:700;letter-spacing:-.01em}
+.hero h1 .u{position:relative;white-space:nowrap}
+.hero h1 .u svg{position:absolute;left:0;right:0;bottom:-.18em;width:100%;height:.35em}
+.hero-lead{margin-top:20px;font-size:1.06rem;color:var(--ink2);max-width:30em}
+.hero-cta{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+.hero-media{position:relative}
+.hero-media .ph{border:3px solid var(--green);border-radius:230px 18px 245px 18px/18px 245px 18px 230px;overflow:hidden;background:var(--soft);transform:rotate(-1.4deg);aspect-ratio:4/3}
+.hero-media .ph img{width:100%;height:100%;object-fit:cover}
+.hero-media .tape{position:absolute;top:-14px;left:26px;font-family:var(--hand);background:#fff;border:2px solid var(--green);color:var(--green);padding:4px 14px;border-radius:999px;transform:rotate(4deg);font-size:1rem;z-index:2}
+.hero-media .float{position:absolute;color:var(--green)}
+.hero-media .f1{right:-6px;top:-18px;transform:rotate(8deg)}
+.hero-media .f2{left:-20px;bottom:20px;transform:rotate(-10deg)}
+
+/* marquee strip */
+.strip{background:var(--green);color:#fff;overflow:hidden;white-space:nowrap;padding:11px 0}
+.strip-in{display:inline-flex;gap:28px;align-items:center;font-family:var(--disp);font-weight:600;font-size:1.02rem;letter-spacing:.02em;animation:mq 22s linear infinite;will-change:transform}
+.strip-in span{display:inline-flex;align-items:center;gap:28px}
+.strip svg{width:17px;height:17px;opacity:.85}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* generic section */
+.sec{padding:clamp(56px,8vw,90px) 0}
+.sec.alt{background:var(--soft)}
+.sec-head{max-width:660px;margin-bottom:clamp(28px,4vw,44px)}
+.sec-head .eyebrow{margin-bottom:12px}
+.sec-head h2{font-size:clamp(1.9rem,4.4vw,2.9rem)}
+.sec-head p{margin-top:14px;color:var(--ink2);max-width:44em}
+
+/* about */
+.about-in{display:grid;grid-template-columns:1fr;gap:32px;align-items:center}
+.about-txt p{color:var(--ink2);margin-bottom:12px}
+.about-txt p b{color:var(--green);font-weight:700}
+.about-media{position:relative}
+.about-media .ph{border:3px solid var(--green);border-radius:18px 240px 18px 250px/235px 18px 250px 18px;overflow:hidden;aspect-ratio:5/4;background:var(--soft);transform:rotate(1.4deg)}
+.about-media .ph img{width:100%;height:100%;object-fit:cover}
+.about-media .stamp{position:absolute;right:-8px;bottom:-16px;background:#fff;border:2.5px solid var(--green);border-radius:48% 52% 45% 55%/55% 45% 55% 45%;width:96px;height:96px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--hand);color:var(--green);text-align:center;line-height:1.1;transform:rotate(-8deg);font-size:.92rem}
+
+/* menu */
+.menu-groups{display:grid;grid-template-columns:1fr;gap:26px}
+.mgroup{background:#fff;border:2.5px solid var(--green);border-radius:26px 220px 24px 230px/210px 26px 235px 22px;padding:26px 24px 28px}
+.mgroup.alt{background:var(--soft)}
+.mgroup h3{font-size:1.5rem;display:flex;align-items:center;gap:10px;margin-bottom:4px}
+.mgroup h3 svg{width:26px;height:26px;flex:none}
+.mgroup .note{font-family:var(--hand);color:var(--leaf);font-size:1.02rem;margin-bottom:16px}
+.mrow{display:grid;grid-template-columns:1fr auto;gap:8px 14px;align-items:baseline;padding:9px 0;border-bottom:1.5px dotted var(--line)}
+.mrow:last-child{border-bottom:0}
+.mrow .nm{font-family:var(--disp);font-weight:600;color:var(--green);font-size:1.04rem}
+.mrow .nm .kr{font-family:var(--kr);font-weight:600;color:var(--ink2);font-size:.82rem;margin-left:8px}
+.mrow .nm .tagi{font-family:var(--hand);color:var(--leaf);font-size:.9rem;margin-left:7px}
+.mrow .pr{font-family:var(--disp);font-weight:600;color:var(--ink);font-size:1.02rem;white-space:nowrap;font-variant-numeric:tabular-nums}
+.menu-foot{margin-top:20px;font-size:.86rem;color:var(--ink2)}
+
+/* space gallery */
+.ggrid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.ggrid figure{border:3px solid var(--green);border-radius:210px 16px 225px 18px/18px 220px 16px 210px;overflow:hidden;background:var(--soft);aspect-ratio:1/1}
+.ggrid figure img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.ggrid figure:nth-child(odd){transform:rotate(-1.2deg)}
+.ggrid figure:nth-child(even){transform:rotate(1.2deg)}
+@media(hover:hover){.ggrid figure:hover img{transform:scale(1.06)}}
+
+/* visit */
+.visit-in{display:grid;grid-template-columns:1fr;gap:30px}
+.vcard{background:#fff;border:2.5px solid var(--green);border-radius:28px 230px 22px 240px/220px 24px 240px 20px;padding:26px 24px}
+.vrow{display:flex;gap:12px;padding:11px 0;border-bottom:1.5px dotted var(--line)}
+.vrow:last-child{border-bottom:0}
+.vrow .ic{flex:none;color:var(--green);margin-top:2px}
+.vrow .k{font-family:var(--disp);font-weight:600;color:var(--green);font-size:.82rem;text-transform:uppercase;letter-spacing:.05em;min-width:74px;flex:none}
+.vrow .v{color:var(--ink);font-size:.96rem}
+.vrow .v .sub{color:var(--ink2);font-size:.85rem}
+.vrow .v .off{color:var(--leaf);font-weight:700}
+.visit-cta{margin-top:20px;display:flex;gap:11px;flex-wrap:wrap}
+.hours-hi{font-family:var(--hand);color:var(--leaf);font-size:1.05rem;margin-bottom:2px}
+
+/* footer */
+.foot{background:var(--green);color:#fff;padding:48px 0 40px;text-align:center}
+.foot img{height:76px;width:auto;margin:0 auto 14px;filter:brightness(0) invert(1)}
+.foot .fnav{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin:14px 0 18px;font-family:var(--disp);font-weight:500}
+.foot .fnav a{color:#fff;opacity:.85}
+.foot .fig{display:inline-flex;align-items:center;gap:8px;font-family:var(--disp);font-weight:600;border:2px solid rgba(255,255,255,.6);border-radius:999px;padding:8px 18px;margin-bottom:16px}
+.foot small{display:block;color:rgba(255,255,255,.6);font-size:.8rem;line-height:1.7}
+
+/* mobile quickbar */
+.qbar{position:fixed;left:0;right:0;bottom:0;z-index:55;display:none;gap:9px;padding:9px 12px calc(9px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1.5px solid var(--line)}
+.qbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:7px;font-family:var(--disp);font-weight:600;font-size:.94rem;padding:12px 0;border-radius:999px}
+.qbar .q1{background:var(--green);color:#fff}
+.qbar .q2{background:#fff;color:var(--green);border:2px solid var(--green)}
+
+/* reveal (desktop only) + reduced-motion fallback */
+@media(min-width:768px){
+ html.js .rv{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+ html.js .rv.in{opacity:1;transform:none}
+}
+@media(prefers-reduced-motion:reduce){
+ .rv{opacity:1!important;transform:none!important;transition:none!important}
+ .strip-in{animation:none!important}
+}
+a:focus-visible,button:focus-visible{outline:2.5px solid var(--leaf);outline-offset:3px;border-radius:6px}
+
+/* desktop */
+@media(min-width:768px){
+ .hero-in{grid-template-columns:1.05fr .95fr;gap:48px}
+ .about-in{grid-template-columns:.95fr 1.05fr;gap:52px}
+ .menu-groups{grid-template-columns:1fr 1fr}
+ .mgroup.wide{grid-column:1 / -1}
+ .ggrid{grid-template-columns:repeat(4,1fr)}
+ .visit-in{grid-template-columns:1.1fr .9fr}
+}
+@media(max-width:767px){
+ .nav-lnk{display:none}
+ .burger{display:flex}
+ .qbar{display:flex}
+ body{padding-bottom:72px}
+ .hero-media .ph{transform:rotate(-1deg)}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.className+=' js'</script>
+
+<!-- HEADER -->
+<header class="hdr" id="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="#top"><img src="haus-logo.png" alt="Hausment 로고">Hausment</a>
+    <nav class="nav-lnk">
+      <a href="#about">Roasting</a>
+      <a href="#menu">Menu</a>
+      <a href="#space">Space</a>
+      <a href="#visit">Visit</a>
+      <a href="https://www.instagram.com/hausment.roasting.room/" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="메뉴 열기" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="drawer" id="drawer">
+  <button class="dx" id="dx" aria-label="닫기">&times;</button>
+  <a href="#about">Roasting</a>
+  <a href="#menu">Menu</a>
+  <a href="#space">Space</a>
+  <a href="#visit">Visit</a>
+  <a href="https://www.instagram.com/hausment.roasting.room/" target="_blank" rel="noopener">Instagram</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero-in">
+    <div class="hero-txt">
+      <span class="eyebrow rv">
+        <svg class="doodle" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 L12 4 L21 11"/><path d="M5 10 V20 H19 V10"/><path d="M10 20 v-5 h4 v5"/></svg>
+        Coffee Roasters · Jeonju
+      </span>
+      <h1 class="rv">A little <span class="u">roasting room<svg viewBox="0 0 300 12" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="M4 8 Q80 2 150 7 T296 5"/></svg></span> in the neighbourhood.</h1>
+      <p class="hero-lead rv">전주 만성동, 어린이 공원 안쪽의 작은 로스팅 룸. 매주 직접 볶는 원두와 손수 내린 한 잔을 만나요.</p>
+      <div class="hero-cta rv">
+        <a class="btn btn-fill" href="#menu">See the menu</a>
+        <a class="btn btn-ol" href="#visit">Find us</a>
+      </div>
+    </div>
+    <div class="hero-media rv">
+      <span class="tape">open, 09–18</span>
+      <svg class="float f1" width="46" height="46" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22 h26 v6 a10 10 0 0 1-10 10 h-6 a10 10 0 0 1-10-10 z"/><path d="M34 24 h5 a5 5 0 0 1 0 10 h-5"/><path d="M14 8 c-2 3 2 5 0 8 M22 6 c-2 3 2 5 0 8"/></svg>
+      <svg class="float f2" width="52" height="52" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6 c8 0 12 7 12 13 0 9-6 15-12 15 S12 28 12 19 C12 13 16 6 24 6z"/><path d="M24 20 v20"/></svg>
+      <div class="ph"><img src="haus-dog.webp" alt="나무 카운터 앞, 강아지와 함께하는 하우스먼트 매장 내부" fetchpriority="high"></div>
+      <span class="memo" style="position:absolute;left:-4px;bottom:-26px;transform:rotate(-4deg);z-index:3">the good boy lives here ♡</span>
+    </div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="strip" aria-hidden="true">
+  <div class="strip-in">
+    <span>FRESHLY ROASTED<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M6 13h9v4a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4z"/><path d="M15 14h3a3 3 0 0 1 0 6h-3"/></svg>HANDMADE COFFEE<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M3 10 L12 4 L21 10 V20 H3 Z"/></svg>WEEKLY ROASTING<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="4"/></svg>JEONJU MANSEONG<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M6 13h9v4a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4z"/><path d="M15 14h3a3 3 0 0 1 0 6h-3"/></svg></span>
+    <span>FRESHLY ROASTED<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M6 13h9v4a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4z"/><path d="M15 14h3a3 3 0 0 1 0 6h-3"/></svg>HANDMADE COFFEE<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M3 10 L12 4 L21 10 V20 H3 Z"/></svg>WEEKLY ROASTING<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="4"/></svg>JEONJU MANSEONG<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M6 13h9v4a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4z"/><path d="M15 14h3a3 3 0 0 1 0 6h-3"/></svg></span>
+  </div>
+</div>
+
+<!-- ABOUT / ROASTING -->
+<section class="sec" id="about">
+  <div class="wrap about-in">
+    <div class="about-txt rv">
+      <span class="eyebrow">
+        <svg class="doodle" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="4"/></svg>
+        Our roasting room
+      </span>
+      <h2>Roasted here,<br>every single week.</h2>
+      <span class="memo" style="transform:rotate(-2deg);margin:6px 0 2px">small batch, roasted weekly ~</span>
+      <p><b>하우스먼트(Hausment)</b>는 '집(Haus)'처럼 편안하게 머무는 로스팅 룸이에요. 매주 소량으로 직접 원두를 볶고, 그날의 커피를 손수 내려 드립니다.</p>
+      <p>대로변이 아니라 어린이 공원 안쪽에 조용히 자리해요. 큰 창으로 드는 볕과 나무 향, 로스터 돌아가는 소리가 함께하는 작은 공간입니다.</p>
+      <p>천천히 머물다 가세요. 강아지와 함께 오셔도 좋아요.</p>
+    </div>
+    <div class="about-media rv">
+      <div class="ph"><img src="haus-roaster.webp" alt="큰 창가에 놓인 커피 로스터기" loading="lazy"></div>
+      <div class="stamp">since<br>Hausment</div>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="sec alt" id="menu">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">
+        <svg class="doodle" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12h10v5a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4z"/><path d="M16 13h3a3 3 0 0 1 0 6h-3"/><path d="M9 4c-1.5 2 1.5 3 0 5M13 4c-1.5 2 1.5 3 0 5"/></svg>
+        The menu
+      </span>
+      <h2>What's brewing.</h2>
+      <p>디카페인 +1,000원 · 테이크아웃 −500원. 시즌에 따라 메뉴가 조금씩 바뀔 수 있어요.</p>
+    </div>
+    <div class="menu-groups">
+      <div class="mgroup">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="#20493B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12h10v5a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4z"/><path d="M16 13h3a3 3 0 0 1 0 6h-3"/><path d="M9 4c-1.5 2 1.5 3 0 5M13 4c-1.5 2 1.5 3 0 5"/></svg>Coffee</h3>
+        <p class="note">디카페인 +1,000 · 테이크아웃 −500</p>
+        <div class="mrow"><span class="nm">Espresso<span class="kr">에스프레소</span></span><span class="pr">4,500</span></div>
+        <div class="mrow"><span class="nm">Americano<span class="kr">아메리카노</span></span><span class="pr">4,500</span></div>
+        <div class="mrow"><span class="nm">Latte<span class="kr">라떼</span></span><span class="pr">5,000</span></div>
+        <div class="mrow"><span class="nm">Flat White<span class="kr">플랫화이트</span></span><span class="pr">5,000</span></div>
+        <div class="mrow"><span class="nm">Vanilla Latte<span class="kr">바닐라 라떼</span></span><span class="pr">5,300</span></div>
+        <div class="mrow"><span class="nm">Haus Cream Latte<span class="tagi">only ice · ♡ fav</span><span class="kr">하우스 크림 라떼</span></span><span class="pr">6,500</span></div>
+      </div>
+      <div class="mgroup alt">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="#20493B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9h14l-1.5 11a2 2 0 0 1-2 1.8H8.5a2 2 0 0 1-2-1.8z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>Non-coffee</h3>
+        <p class="note">tea · ade · latte</p>
+        <div class="mrow"><span class="nm">Lychee Peach Iced Tea<span class="kr">리치 피치 아이스티</span></span><span class="pr">6,500</span></div>
+        <div class="mrow"><span class="nm">Lemon Ade<span class="kr">레몬 에이드</span></span><span class="pr">5,500</span></div>
+        <div class="mrow"><span class="nm">Hojy Latte<span class="kr">호지 라떼</span></span><span class="pr">6,500</span></div>
+        <div class="mrow"><span class="nm">Vanilla Oatly Choco<span class="kr">바닐라 오트리 초코</span></span><span class="pr">6,500</span></div>
+        <div class="mrow"><span class="nm">Jasmine Milk Tea<span class="kr">자스민 밀크티</span></span><span class="pr">6,500</span></div>
+        <div class="mrow"><span class="nm">Mugwort Tea<span class="tagi">early spring</span><span class="kr">이른 봄 쑥 차</span></span><span class="pr">6,500</span></div>
+      </div>
+      <div class="mgroup wide">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="#20493B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M6 20v-6c0-3 2.7-5 6-5s6 2 6 5v6"/><path d="M12 9V6M10 4h4"/></svg>Dessert</h3>
+        <div class="mrow"><span class="nm">Vanilla Bean Pound Cake<span class="kr">바닐라 빈 파운드 케이크</span></span><span class="pr">5,800</span></div>
+        <div class="mrow"><span class="nm">Blueberry Rare Cheesecake<span class="kr">블루베리 레어 치즈케이크</span></span><span class="pr">7,500</span></div>
+        <div class="mrow"><span class="nm">Green Tea Mountain<span class="kr">그린티 마운틴</span></span><span class="pr">7,500</span></div>
+      </div>
+    </div>
+    <p class="menu-foot">· 가격은 매장 사정에 따라 변동될 수 있어요. 최신 메뉴는 인스타그램에서 확인해 주세요.</p>
+  </div>
+</section>
+
+<!-- SPACE -->
+<section class="sec" id="space">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">
+        <svg class="doodle" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 L12 4 L21 11"/><path d="M5 10 V20 H19 V10"/><rect x="14" y="13" width="3" height="3"/></svg>
+        Come sit a while
+      </span>
+      <h2>The space.</h2>
+      <span class="memo" style="transform:rotate(-1.5deg);margin-top:6px">come say hi :)</span>
+    </div>
+    <div class="ggrid rv">
+      <figure><img src="haus-storefront.webp" alt="하우스먼트 매장 외관과 나무 인테리어" loading="lazy"></figure>
+      <figure><img src="haus-interior.webp" alt="원목 테이블과 펜던트 조명이 있는 내부" loading="lazy"></figure>
+      <figure><img src="haus-barista.webp" alt="바 카운터에서 커피를 내리는 바리스타" loading="lazy"></figure>
+      <figure><img src="haus-beans.webp" alt="하우스먼트 케냐 원두 패키지" loading="lazy"></figure>
+      <figure><img src="haus-iced.webp" alt="원목 테이블 위 아이스 커피와 하우스 블렌드 카드" loading="lazy"></figure>
+      <figure><img src="haus-seat.webp" alt="창밖으로 초록이 보이는 좌석" loading="lazy"></figure>
+      <figure><img src="haus-night.webp" alt="저녁의 하우스먼트 외관" loading="lazy"></figure>
+      <figure><img src="haus-doodles.webp" alt="하우스먼트 손그림 로고 스케치" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section class="sec alt" id="visit">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">
+        <svg class="doodle" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c5-5 7-8.5 7-12a7 7 0 0 0-14 0c0 3.5 2 7 7 12z"/><circle cx="12" cy="9" r="2.4"/></svg>
+        Find us
+      </span>
+      <h2>Come visit.</h2>
+    </div>
+    <div class="visit-in">
+      <div class="vcard rv">
+        <div class="vrow">
+          <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c5-5 7-8.5 7-12a7 7 0 0 0-14 0c0 3.5 2 7 7 12z"/><circle cx="12" cy="9" r="2.4"/></svg></span>
+          <span class="k">Address</span>
+          <span class="v">전북 전주시 덕진구 만성북2길 15 1층 102호<br><span class="sub">대로변이 아니라 어린이 공원 안쪽(후켄 만성점)으로 들어오시면 매장 입구가 보여요.</span></span>
+        </div>
+        <div class="vrow">
+          <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <span class="k">Hours</span>
+          <span class="v"><span class="hours-hi">Wed – Sun · 09:00 – 18:00</span><span class="sub">라스트오더 17:30</span><br><span class="off">정기휴무 · 매주 월요일 · 화요일</span></span>
+        </div>
+        <div class="vrow">
+          <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 16V8h3.5a2.5 2.5 0 0 1 0 5H9"/></svg></span>
+          <span class="k">Parking</span>
+          <span class="v">갓길 주차가 가능하며 만성지구 공영주차장 이용을 권해 드려요.<br><span class="sub">영업 시간 내에는 건물 지상 주차장도 이용 가능합니다.</span></span>
+        </div>
+        <div class="visit-cta">
+          <a class="btn btn-fill" href="https://map.naver.com/p/entry/place/2094679025" target="_blank" rel="noopener">네이버 지도</a>
+          <a class="btn btn-ol" href="https://www.instagram.com/hausment.roasting.room/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+      <div class="about-media rv" style="align-self:center">
+        <div class="ph" style="transform:rotate(-1.6deg);border:3px solid var(--green);border-radius:18px 235px 18px 245px/230px 18px 245px 18px;overflow:hidden;aspect-ratio:4/5;background:var(--soft)"><img src="haus-seat.webp" alt="창밖으로 초록이 보이는 하우스먼트 좌석" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="wrap">
+    <img src="haus-logo.png" alt="Hausment 로고">
+    <div class="fnav">
+      <a href="#about">Roasting</a>
+      <a href="#menu">Menu</a>
+      <a href="#space">Space</a>
+      <a href="#visit">Visit</a>
+    </div>
+    <div><a class="fig" href="https://www.instagram.com/hausment.roasting.room/" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+      @hausment.roasting.room</a></div>
+    <small>Hausment Coffee Roasters · 전북 전주시 덕진구 만성북2길 15 1층 102호<br>Wed–Sun 09:00–18:00 (L.O. 17:30) · Mon·Tue closed</small>
+  </div>
+</footer>
+
+<!-- MOBILE QUICKBAR -->
+<div class="qbar">
+  <a class="q1" href="https://map.naver.com/p/entry/place/2094679025" target="_blank" rel="noopener">
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c5-5 7-8.5 7-12a7 7 0 0 0-14 0c0 3.5 2 7 7 12z"/><circle cx="12" cy="9" r="2.4"/></svg>네이버 지도</a>
+  <a class="q2" href="https://www.instagram.com/hausment.roasting.room/" target="_blank" rel="noopener">
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>Instagram</a>
+</div>
+
+<noscript><style>.rv{opacity:1!important;transform:none!important}</style></noscript>
+<script>
+(function(){
+  var hdr=document.getElementById('hdr');
+  addEventListener('scroll',function(){hdr.classList.toggle('scrolled',scrollY>10)},{passive:true});
+  var b=document.getElementById('burger'),dw=document.getElementById('drawer'),dx=document.getElementById('dx');
+  function open(){dw.classList.add('open');b.setAttribute('aria-expanded','true')}
+  function close(){dw.classList.remove('open');b.setAttribute('aria-expanded','false')}
+  b.addEventListener('click',open);dx.addEventListener('click',close);
+  dw.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close)});
+  addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+  // reveal
+  var rvs=[].slice.call(document.querySelectorAll('.rv'));
+  if('IntersectionObserver' in window && matchMedia('(min-width:768px)').matches && !matchMedia('(prefers-reduced-motion:reduce)').matches){
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{threshold:.12});
+    rvs.forEach(function(el){io.observe(el)});
+    setTimeout(function(){rvs.forEach(function(el){el.classList.add('in')})},1600);
+  }else{rvs.forEach(function(el){el.classList.add('in')})}
+})();
+</script>
+</body>
+</html>
