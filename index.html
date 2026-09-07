@@ -141,7 +141,7 @@ h1,h2,h3{font-family:var(--disp);font-weight:700;line-height:1.14;color:var(--gr
 .vrow:last-child{border-bottom:0}
 .vrow .ic{flex:none;color:var(--green);margin-top:2px}
 .vrow .k{font-family:var(--disp);font-weight:600;color:var(--green);font-size:.82rem;text-transform:uppercase;letter-spacing:.05em;min-width:74px;flex:none}
-.vrow .v{color:var(--ink);font-size:.96rem}
+.vrow .v{color:var(--ink);font-size:.96rem;min-width:0;flex:1;overflow-wrap:anywhere}
 .vrow .v .sub{color:var(--ink2);font-size:.85rem}
 .vrow .v .off{color:var(--leaf);font-weight:700}
 .visit-cta{margin-top:20px;display:flex;gap:11px;flex-wrap:wrap}
@@ -183,8 +183,6 @@ a:focus-visible,button:focus-visible{outline:2.5px solid var(--leaf);outline-off
  .qbar{display:flex}
  body{padding-bottom:72px}
  .hero-media .ph{transform:rotate(-1deg)}
- .visit-in{justify-items:center}
- .visit-in .vcard{width:100%;max-width:460px}
  .visit-in>.about-media{width:100%;max-width:330px;margin:0 auto}
 }
 </style>
